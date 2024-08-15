@@ -1,0 +1,19 @@
+/*.sortable-fallback { opacity: 1 !important }*/
+.sortable-ghost {
+  /*    background: green;*/
+  border: none;
+  /*  color: #fff;*/
+/*      background-color: #e5e7eb !important;*/
+      background-color: #f3f4f6 !important;
+}
+.sortable-chosen {
+  /*  background-color: green;*/
+  /*    background: orange;*/
+  /*background: white;*/
+}
+.sortable-drag {
+  /*  background-color: orange;*/
+  opacity: 1 !important;
+  border: none;
+/*  background-color: #f9fafb;*/
+}

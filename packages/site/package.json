@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "buildjs": "vite build",
+    "format": "prettier --write resources/js/**/*.{ts,tsx,js,jsx,vue}",
+    "format:check": "prettier --check resources/js/**/*.{ts,tsx,js,jsx,vue}",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.vue --ignore-path .gitignore --fix resources/js",
+    "lint:check": "eslint --ext .js,.jsx,.ts,.tsx,.vue --ignore-path .gitignore resources/js"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
+  }
+}

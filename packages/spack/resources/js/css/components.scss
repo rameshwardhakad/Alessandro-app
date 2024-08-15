@@ -1,0 +1,42 @@
+@import "mixins";
+
+// Variables
+$darkBg: orange;
+
+@layer components {
+  .dropdown-card {
+    position: absolute;
+    background-color: white;
+
+    &.left {
+      @include ltr {
+        left: 0;
+      }
+
+      @include rtl {
+        right: 50px;
+      }
+    }
+
+    @include dark {
+      background-color: $darkBg;
+    }
+  }
+
+  .btn {
+    background-color: yellow;
+    padding: 10px;
+
+    @include ltr {
+      margin-left: 10px;
+    }
+
+    @include rtl {
+      margin-right: 20px;
+    }
+
+    @include dark {
+      color: gray;
+    }
+  }
+}

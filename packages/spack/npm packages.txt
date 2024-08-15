@@ -1,0 +1,7 @@
+yarn add tailwindcss vue
+
+ya @heroicons/vue @tailwindcss/aspect-ratio @tailwindcss/forms @tailwindcss/typography @types/autosize @types/lodash @types/marked @types/node @types/sortablejs @types/uuid @typescript-eslint/eslint-plugin @typescript-eslint/parser @vitejs/plugin-vue @vitejs/plugin-vue-jsx @vue/eslint-config-typescript @vue/test-utils @vueuse/core @vueuse/integrations autoprefixer autosize axios chart.js cooltipz-css eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-sort-destructure-keys eslint-plugin-vue flatpickr highlight.js jsdom laravel-echo lodash marked pinia postcss postcss-nested prettier prettier-plugin-tailwindcss pusher-js sass showdown sortablejs typescript uuid vite vite-plugin-eslint vitest vue-router vue-tsc
+
+
+yarn upgrade --latest
+yarn upgrade vue pinia --latest

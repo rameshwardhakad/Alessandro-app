@@ -1,0 +1,17 @@
+{
+    "name": "span/spack",
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spack\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

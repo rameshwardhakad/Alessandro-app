@@ -1,0 +1,17 @@
+@layer components {
+  .dropdown-card {
+    position: absolute;
+    background-color: white;
+
+    :is([dir='ltr']) &.left {
+      left: 0;
+    }
+    :is([dir='rtl']) &.left {
+      right: 0;
+    }
+  }
+
+  :is(.dark) .dropdown-card {
+    background-color: orange;
+  }
+}

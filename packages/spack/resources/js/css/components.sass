@@ -1,0 +1,42 @@
+@import "variables"
+@import "mixins"
+
+@layer components
+  .page-container
+    padding: theme('spacing.6') theme('spacing.8')
+    padding-bottom: theme('spacing.14')
+
+  .page-loader
+    @apply flex items-center justify-center pt-14
+
+  .dropdown-card
+    @apply absolute z-30 mt-2 w-64 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none
+
+    &.left
+      +ltr
+        left: 0
+      +rtl
+        right: 0
+
+    &.right
+      +ltr
+        right: 0
+      +rtl
+        left: 0
+
+    +dark
+      background-color: $card-dark-bg
+
+  .btn
+    background-color: yellow
+    padding: 10px
+
+    +ltr
+      margin-left: 10px
+
+    +rtl
+      margin-right: 20px
+
+    +dark
+      color: gray
+      background-color: blue

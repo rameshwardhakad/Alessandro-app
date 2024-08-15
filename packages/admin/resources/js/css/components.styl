@@ -1,0 +1,45 @@
+dark()
+  :is(.dark) &
+    block
+
+@layer components
+  .dropdown-card
+    position absolute
+    background-color white
+
+    &.left
+      [dir='ltr']
+        left 0
+      [dir='rtl']
+        right 0
+
+    &.right
+      [dir='ltr']
+        right 0
+      [dir='rtl']
+        left 0
+
+    :is(.dark)
+      background-color orange
+
+
+
+
+
+
+  .btn
+    padding 10px
+    font-size 20px
+
+    [dir='ltr'] &.left
+      left 0
+    [dir='rtl'] &.left
+      right 0
+
+    [dir='ltr'] &.right
+      right 0
+    [dir='rtl'] &.right
+      left 0
+
+  :is(.dark) .dropdown-card
+    background-color orange

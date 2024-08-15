@@ -1,0 +1,55 @@
+body {
+  background: yellow;
+}
+
+.abc
+  padding 10px
+  margin 5px
+  color blue
+  background green
+  &.you
+    background red
+
+.btn {
+  padding: theme('spacing.2') theme('spacing.4');
+  background-color: theme('colors.blue.500');
+  margin: theme('ltr.spacings.2');
+}
+
+@layer components {
+  .dropdown-card {
+    position: absolute;
+    margin-top: 0.5rem;
+    background-color: red;
+
+    &.left {
+      background-color: green;
+    }
+  }
+
+  /*  .dropdown-card {
+    position: absolute;
+    margin-top: 0.5rem;
+    background-color: red;
+  }
+
+  .dropdown-card.left {
+    background-color: green;
+  }*/
+
+  .mycard {
+    padding: 10px;
+    margin: 0;
+    font-size: 30px;
+    color: black;
+    background: orange;
+  }
+
+  :is([dir='ltr']) .mycard.left {
+    background-color: green;
+  }
+
+  :is([dir='rtl']) .mycard.left {
+    background-color: yellow;
+  }
+}
